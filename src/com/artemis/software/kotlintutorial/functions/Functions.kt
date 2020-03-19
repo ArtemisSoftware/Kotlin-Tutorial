@@ -22,6 +22,17 @@ fun printDetails(name: String, email: String = "", phone: String = "NA"){
     println("name: $name - email: $email - phone: $phone")
 }
 
+
+fun printStrings(vararg strings: String){
+    reallyPrintingStrings(*strings)
+}
+
+private fun reallyPrintingStrings(vararg strings: String) {
+    for (string in strings) {
+        println(string)
+    }
+}
+
 fun main(args: Array<String>){
     hello()
 
@@ -32,4 +43,9 @@ fun main(args: Array<String>){
     sum(1, 2, 3)
     sum(1, 2)
     printDetails("Aldebaran", phone = "555 12 3")
+
+
+    printStrings("1")
+    printStrings("1", "2")
+    printStrings("1", "2", "2")
 }
