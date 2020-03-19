@@ -16,8 +16,11 @@ fun takingString(name: String){
     println(name)
 }
 
-fun sum(x: Int, y: Int) = x + y
+fun sum(x: Int, y: Int, z: Int = 0, w: Int = 0) = x + y + z + w
 
+fun printDetails(name: String, email: String = "", phone: String = "NA"){
+    println("name: $name - email: $email - phone: $phone")
+}
 
 fun main(args: Array<String>){
     hello()
@@ -25,4 +28,8 @@ fun main(args: Array<String>){
     val value = returnAFour()
 
     takingString("Some value")
+
+    sum(1, 2, 3)
+    sum(1, 2)
+    printDetails("Aldebaran", phone = "555 12 3")
 }
