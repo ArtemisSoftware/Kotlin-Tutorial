@@ -1,4 +1,4 @@
-package basics
+package com.artemis.software.kotlintutorial.basics
 
 fun main(args: Array<String>){
 
