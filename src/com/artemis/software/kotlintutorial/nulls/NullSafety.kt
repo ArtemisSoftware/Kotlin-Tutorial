@@ -6,9 +6,9 @@ fun main(args: Array<String>){
 
     val message: String = "A message"
 
-    val nullMessage: String? = null
+    var nullMessage: String? = null
     val inferrefNull = null
 
-    println(nullMessage!!.length)
+    println(nullMessage?.length)
 
 }
