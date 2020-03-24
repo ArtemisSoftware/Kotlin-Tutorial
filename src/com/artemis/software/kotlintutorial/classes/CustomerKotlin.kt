@@ -1,10 +1,35 @@
 package com.artemis.software.kotlintutorial.classes
 
+import java.io.IOException
+
 data class CustomerKotlin (var id: Int, var name: String, var email: String){
+
+    @JvmField val someField = "Value"
 
     override fun toString(): String {
         return "{\"id\":  \"$id\", \"name\":  \"$name\"}\n"
     }
+
+    @JvmOverloads fun changeStatus(status: Status = Status.current){
+
+    }
+
+    @JvmName("preferential") fun makeOreferred(){
+
+    }
+
+
+    @Throws(IOException::class) fun loadStatistics(filename: String){
+
+        if(filename == ""){
+            throw IOException("Filename cannot be blank")
+        }
+    }
+}
+
+enum class Status {
+    current,
+    Past
 }
 
 fun main(args: Array<String>){
