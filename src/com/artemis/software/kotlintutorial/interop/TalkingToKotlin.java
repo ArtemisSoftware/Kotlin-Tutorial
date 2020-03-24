@@ -1,6 +1,7 @@
 package com.artemis.software.kotlintutorial.interop;
 
 import com.artemis.software.kotlintutorial.classes.CustomerKotlin;
+import com.artemis.software.kotlintutorial.classes.CustomerKotlinKt;
 import com.artemis.software.kotlintutorial.classes.Status;
 
 import java.io.IOException;
@@ -31,6 +32,7 @@ public class TalkingToKotlin {
         UtilityClass.prefix("some", "value");
         int copyrightYear = UtilityClass.CopyrightYear;
 
+        CustomerKotlinKt.extension(customerKotlin);
 
     }
 }
