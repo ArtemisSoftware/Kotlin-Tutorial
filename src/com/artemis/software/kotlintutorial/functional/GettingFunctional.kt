@@ -19,7 +19,7 @@ fun unaryOp(op: (Int) -> Int){
 }
 
 fun unaryOperation(z: Int, op: (Int) -> Int){
-
+    op(z)
 }
 fun sum(x: Int, y: Int) = x + y
 
