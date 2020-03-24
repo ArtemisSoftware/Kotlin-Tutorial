@@ -1,5 +1,8 @@
 package com.artemis.software.kotlintutorial.classes;
 
+import org.jetbrains.annotations.NotNull;
+
+import java.awt.datatransfer.StringSelection;
 import java.util.Objects;
 
 public class CustomerJava {
@@ -37,6 +40,13 @@ public class CustomerJava {
         System.out.printf("Id: %d - Name %s %\n", id, name);
     }
 
+    public @NotNull String neverNull(){
+        return "A string";
+    }
+
+    public String sometimesNull(){
+        return "A string";
+    }
 
     @Override
     public String toString() {
