@@ -28,6 +28,8 @@ public class TalkingToKotlin {
         customerKotlin.changeStatus();
         customerKotlin.preferential();
 
+        UtilityClass.prefix("some", "value");
+        int copyrightYear = UtilityClass.CopyrightYear;
 
 
     }
