@@ -22,5 +22,10 @@ fun main() {
        println(word)
     }
 
+    val wordList = wordMap.toList()
+    val sorted = wordList.sortedWith(compareByDescending ({it.first}))
 
+    for(word in sorted){
+        println("${word.first} - ${word.second}")
+    }
 }
