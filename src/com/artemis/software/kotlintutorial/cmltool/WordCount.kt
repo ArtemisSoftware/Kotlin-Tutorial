@@ -3,9 +3,9 @@ package com.artemis.software.kotlintutorial.cmltool
 import java.io.File
 import java.io.InputStream
 
-fun main() {
+fun main(args: Array<String>) {
 
-    val inputStream: InputStream = File("lyrics.txt").inputStream()
+    val inputStream: InputStream = File(args[0]).inputStream()
 
     val allTheWords = inputStream.bufferedReader().use{it.readText()}
 
