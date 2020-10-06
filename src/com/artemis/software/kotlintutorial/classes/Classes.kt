@@ -9,7 +9,7 @@ class Customer(val id: Int, var name: String = "", val yearOfBirth: Int){
         name = name.toUpperCase()
     }
 
-    constructor(email: String): this(0, "", 1900){
+    constructor(email: String): this(0, "", 1901){
 
     }
 
